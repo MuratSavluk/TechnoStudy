@@ -16,4 +16,12 @@ public class Tests extends BaseDriver {
         bekleVeKapat();
     }
 
+    @Test
+    public void Test_LoginCampus(){
+        driver.get("https://techno.study/tr/");
+        WebElement campusLogin = driver.findElement(By.linkText("Campus Login"));
+        campusLogin.click();
+        bekleVeKapat();
+    }
+
 }
